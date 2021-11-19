@@ -1,0 +1,884 @@
+/* MOBILE VIEW */
+/* Navigation */
+.nav_links {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    nav a.current {
+        font-weight: bolder;
+        border: 2px solid white;
+    }
+
+/* Header */
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #6b705c;
+    color: white;
+}
+
+
+/* Skip to Main function */
+.skip a {
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+    color: black;
+}
+
+.skip a:focus {
+    position: absolute;
+    top: 0;
+    color: black;
+ }
+
+/* Focus */
+*:focus {
+    border: 2px solid white;
+}
+
+.sidebar a:focus{
+    border:2px solid black;
+}
+
+/* Setting typography styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #ebedf0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+a {
+    color: #794839;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* Image styling */
+img {
+    padding: 10px;
+}
+
+/* Animation for on "About" box on home page*/
+@keyframes header {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes description{
+    0% {opacity: 0}
+    25% {opacity: 0}
+    100% {opacity: 100}
+}
+
+#home-about-header {
+    animation-name: header;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+#home-about-description {
+    animation-name: description;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+/* Home "About" box styling */
+#home-about {
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+    #home-about h1 {
+        font-weight: bold;
+    }
+
+/* Styling for project list on homepage */
+    #projects_heading {
+        padding: 10px;
+    }
+
+/* Project grid on homepage */
+.project_container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: repeat(9, auto);
+    margin: auto;
+    grid-row-gap: 15px;
+}
+
+.project_container img{
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.witness_link, .spenser_link, .london_link, .carleton_link, .westfield_link, .wahpekute_link, .cfc_link, .theaters_link, .brcl_link {
+    text-align: center;
+    color: white;
+    background-color: rgb(0,0,0, .75);
+    font-size: 1.5em;
+    padding: 10px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.witness_link {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+}
+
+.witness_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 1 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.spenser_link {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+}
+
+.spenser_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 2 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.london_link {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+}
+
+.london_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 3 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.carleton_link {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+}
+
+.carleton_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 4 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.westfield_link {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 1;
+}
+
+.westfield_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 5 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.wahpekute_link {
+    grid-column: 1 / span 3;
+    grid-row: 6 / span 1;
+}
+
+.wahpekute_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 6 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.cfc_link {
+    grid-column: 1 / span 3;
+    grid-row: 7 / span 1;
+}
+
+.cfc_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 7 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.theaters_link {
+    grid-column: 1 / span 3;
+    grid-row: 8 / span 1;
+}
+
+.theaters_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 8 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.brcl_link {
+    grid-column: 1 / span 3;
+    grid-row: 9 / span 1;
+}
+.brcl_image {
+    grid-column: 1/-1;
+    max-height: 700px;
+    overflow: hidden;
+    grid-row: 9 / span 1;
+    object-fit: cover;
+    height: auto;
+}
+
+.project_container a{
+    color: white;
+}
+
+    .project_container a:visited {
+        color: white;
+    }
+
+    .project_container a:hover {
+        color: #cb997e;
+    }
+
+.project_container img:hover{
+      border: solid black 3px;
+    }
+
+/* Flip card styling */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: black;
+    color: white;
+}
+
+.flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* About Page styling */
+    #about_page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        background-color: white;
+        padding: 10px;
+    }
+
+        #about-page .h2{
+            grid-row: 1;
+        }
+
+        #about_page .sidebar {
+            grid-row: 2;
+            margin: 20px;
+            padding: 10px;
+            background-color: #ffe8d6;
+        }
+
+        #about_page .bio {
+            grid-row: 3;
+            margin: 10px;
+        }
+
+        #about_page .sidebar p{
+            text-align: center;
+        }
+
+            #about_page .sidebar a {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                color: black;
+                line-height: 1.5;
+            }
+
+/* Project page styling */
+/* Project header */
+   .project_description {
+       background-color: white;
+       padding: 10px;
+   }
+
+#project_header_witness {
+    background-image: url("../images/boston_massacre.jpg");
+}
+
+#project_header_carleton {
+    background-image: url("../images/carleton_70s.jpg");
+}
+
+#project_header_westfield {
+    background-image: url("../images/wnc.jpg");
+}
+
+#project_header_london {
+    background-image: url("../images/agas_fragment.png");
+}
+
+#project_header_spenser {
+    background-image: url("../images/kilcolman_vr.jpg");
+}
+
+#project_header_wahpekute {
+    background-image: url("../images/dakota.jpg");
+}
+
+#project_header_brcl {
+    background-image: url("../images/brcl.jpg");
+}
+
+#project_header_cfc {
+    background-image: url("../images/rialto.jpg");
+}
+
+#project_header_theaters {
+    background-image: url("../images/michigan_theater.jpg");
+}
+
+.project_header {
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    background-repeat: no-repeat;
+    height: 400px; /* Parallax effect */
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.project_header_title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    top: 40vh;
+    left: 20vw;
+    right: 20vw;
+    position: absolute;
+    text-align: center;
+    color: white;
+    background-color: black;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* Project Description*/
+#project_description_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.timeline {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.timeline p{
+    text-align: center;
+}
+
+.skills {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.tools {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.tools li, .skills li {
+    padding: 10px;
+    text-align: center;
+}
+
+.goal{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.project_page_image {
+    display: block;
+    margin: auto;
+}
+
+
+/* Project Navigation */
+.project_nav h2{
+    margin-top: 20px;
+
+}
+
+.project_nav_links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #794839;
+    padding: 10px;
+}
+
+    .project_nav_links a.current {
+        font-weight: bolder;
+        border: 2px solid white;
+    }
+
+/* Forms */
+form {
+    border: 3px solid #f1f1f1;
+    padding: 10px;
+}
+
+legend {
+    font-size: 125%;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type=submit] {
+    background-color: #6b705c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+span {
+    margin-left: 20%;
+    font-family: italic;
+    font-weight: bold;
+}
+
+    input[type=submit]:hover {
+        opacity: 0.8;
+    }
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#msg_label {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+/* TABLET VIEW */
+@media screen and (min-width: 768px) {
+    .nav_links {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .witness_link {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .witness_image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .spenser_link {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .spenser_image {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .london_link {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .london_image {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .carleton_link {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .carleton_image {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .westfield_link {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .westfield_image {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .wahpekute_link {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .wahpekute_image {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .cfc_link {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .cfc_image {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .theaters_link {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .theaters_image {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .brcl_link {
+        grid-column: 1 span 1;
+        grid-row: 5;
+    }
+
+    .brcl_image {
+        grid-column: 1 span 1;
+        grid-row: 5;
+    }
+
+    #about_page {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: white;
+    }
+
+        #about_page .bio {
+            grid-row: 2;
+            grid-column: 2;
+            margin: 10px;
+        }
+
+    #about_me_header {
+        grid-row: 1;
+        grid-column: 2;
+        padding-bottom: 10px;
+    }
+
+    #about_page .sidebar {
+        grid-column: 1;
+        margin: 20px;
+        padding: 10px;
+        background-color: #ffe8d6;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    textarea {
+        width: 80%;
+        height: 25vh;
+    }
+
+    .project_header_title {
+        top: 30vh;
+    }
+
+
+        #project_description_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 30px;
+    }
+
+    .timeline {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .skills {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .tools {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+
+    #msg_label {
+        display: inline-block;
+        position: relative;
+        bottom: 150px;
+    }
+
+    label{
+        width: 15%;
+    }
+}
+
+
+ /* DESKTOP VIEW */
+@media screen and (min-width: 1080px) {
+
+    .project_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .witness_link, .witness image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .spenser_link, .spenser_image {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .london_link, .london_image {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .carleton_link, .carleton_image {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .westfield_link, .westfield_image {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .wahpekute_link, .wahpekute_image {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .cfc_link, .cfc_image {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .theaters_link, .theaters_image {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .brcl_link, .brcl_image {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    #about_page {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: white;
+    }
+
+        #about_page .bio {
+            grid-row: 2;
+            grid-column: 2;
+            margin: 10px;
+        }
+
+    #about_me_header {
+        grid-row: 1;
+        grid-column: 2;
+        padding-bottom: 10px;
+    }
+
+    #about_page .sidebar {
+        grid-column: 1;
+        margin: 20px;
+        padding: 10px;
+        background-color: #ffe8d6;
+    }
+
+    .witness_link, .spenser_link, .london_link, .carleton_link, .westfield_link, .wahpekute_link, .cfc_link, .theaters_link, .brcl_link {
+        font-size: 1.25em;
+    }
+}
+
+    /* Prefers Reduced Motion */
+    @media screen and (prefers-reduced-motion) {
+        /* Turn off parallax effect*/
+        .project_header {
+            background-attachment: scroll;
+        }
+
+        /* Turn off animation */
+        #home-about-header{
+            animation-iteration-count: 0;
+            animation-duration: 0s;
+        }
+
+        #home-about-description {
+            animation-iteration-count: 0;
+            animation-duration: 0s;
+        }
+    }

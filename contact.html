@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/gb.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+
+    <header>
+        <h1>Grace Brindle</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <form action="https://formspree.io/f/xdoyqgnq" method="POST">
+            <fieldset>
+                <legend>Contact Me</legend>
+
+                <label for="name_id">Your Name</label>
+                <input type="text" placeholder="Enter Your Name" id="name_id" name="name" required>
+
+                <label for="email_id">Your Email</label>
+                <input type="email" placeholder="Enter Your Email" id="email_id" name="email" required>
+
+                <label for="phone_id">Your Phone Number</label>
+                <input type="tel" name="phone" placeholder="123-456-7890" id="phone_id" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <div><span>Format: 123-456-7890</span></div>
+
+                <label for="msg" id="msg_label">Leave A Message</label>
+                <textarea placeholder="Enter your message" id="msg" name="mesg" required></textarea><br>
+
+                <input type="submit" value="Contact Me">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            Grace Brindle
+            <br /> gracebrindle@gmail.com
+            <br /> <a href="https://www.linkedin.com/in/grace-brindle/">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>
